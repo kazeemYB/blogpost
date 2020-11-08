@@ -1,0 +1,48 @@
+.nav-links li a:hover {
+    color: aquamarine;
+    font-size: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    /* background-color: #4a6891; */
+    background-color: #4b2d02;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    border: hidden;
+}
+
+.navbar-toggle div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.5s ease;
+    border: 1px solid;
+}

@@ -1,0 +1,26 @@
+#banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('https://pbs.twimg.com/media/DDVW-SMWsAAmHeb?format=jpg&name=medium');
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 16px;
+    /* background-blend-mode: overlay;
+    color: white; */
+}
+
+#banner h1 {
+    padding: 0 24px;
+    font-size: 48px;
+    color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/c4/51/c1/c451c1bc2f00b2b6d4a56231a21106ee.jpg");
+    font-family: 'Stylish', sans-serif; 
+}
