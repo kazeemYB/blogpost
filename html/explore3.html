@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Explore Images</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h3><a href="../index.html">Blogpost</a></h3>
+            </div>
+            <div class="dropdown">
+                <button type="button" id="drop-button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>
+                </button>
+            </div>
+            <ul class="nav-links dropdown-content">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+      </nav>
+    </header>
+    <section>
+        <div class="explore-text">
+            <br><br>
+            <p>Click to enlarge images below</p>
+        </div>         
+          <!-- The Explore images -->
+        <div class="row">
+            <div class="column">
+                <img src="https://i.pinimg.com/564x/a1/56/4c/a1564cf3d8e040f78f7391970163a99a.jpg" alt="Helicopter Skiing" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="https://i.pinimg.com/564x/9b/61/d9/9b61d9c75563e5c378c2ca81c07c6c43.jpg" alt="Bell Helicopter in snow top" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="https://i.pinimg.com/564x/ba/25/78/ba25783aec12c3dbd5617f11afe663e8.jpg" alt="Helicopter Skiing Race" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="https://i.pinimg.com/564x/e9/37/23/e93723ed7e399e5a22c24c7355cb5f4e.jpg" alt="Perfect Skiing Movie Shot" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+          
+        <div class="explore-container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:50%">
+            <div id="imgtext"></div>
+        </div>
+          
+        <script>
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
+    </section>
+    <footer id="copyright">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+          <li><a href="https://github.com/kazeemYB" target="_blank">Github Page</a></li>
+        </ul>
+        <p>Bada Design &copy;2020  |  Photography, design and website construction by Bada Design &copy;2020</p>
+    </footer>
+</body>
+</html>

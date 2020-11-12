@@ -24,52 +24,21 @@
 }
 
 /*Global*/
-.button_1{
+/* .button-1 {
     height: 30px;
     background: #4b2d02;
     border: none;
     padding-left: 20px;
     padding-right: 20px;
     color: #ffffff;
-}
+} */
 
-/*Newsletters*/
-#newsletter{
-    padding: 15px;
-    background: #474e5d;
-}
-
-#newsletter h1{
-    display: inline;
-    font-size: 23px;
-    color: #ffffff;
-}
-
-#newsletter form{
-    display: inline;
-    float: right;
-}
-
-#newsletter input[type="email"]{
-    /* padding: 4px; */
-    height: 30px;
-    width: 250px;
-    color: #00000f;
-    font-style: italic;
-    font-family: monospace;
-}
-
-.news-container{
-    width: 80%;
-    margin: auto;
-}
-
-#main-about{
+#main-about {
     padding-top: 0px;
     color: #00000f;
 }
 
-.dark{
+.dark {
     padding: 15px;
     background: #35424a;
     color: #ffffff;
@@ -79,64 +48,75 @@
 }
 
 /* Sidebar*/
-#sidebar{
+#sidebar {
     float: right;
     width: 30%;
     margin-top: 67px;
     color: #00000f;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+aside#sidebar .quote input, aside#sidebar .quote textarea {
     width: 90%;
     padding: 5px;
 }
 
-article#main-about{
+article#main-about {
     float: left;
     width: 65%;
 }
 
-article#main-about p{
+article#main-about p {
     font-size: 25px;
 }
 
-article#main-about h1{
+article#main-about h1 {
     padding: 10px;
     text-align: left;
     margin-left: 38px;
 }
 
-.quote{
+.quote {
     font-size: 13px;
 }
 
-.quote input[type="text"]{
+.quote button{
+    width: 100px;
+    height: 30px;
+}
+
+.quote button:hover {
+    background-color: #965c0c;
+}
+
+.quote input[type="text"] {
     color: #000;
 }
 
-.quote textarea{
+.quote textarea {
     color: #00000f;
 }
 
 
 /* Tablet/Mobile view */
-@media screen and (max-width:1024px){
-    .nav-links{
+@media screen and (max-width:1024px) {
+    .nav-links {
         width: 60%;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     #newsletter button,
-    .quote button{
+    .quote button {
         display: block;
         width: 100;
     }
-    #newsletter form input[type="email"], .quote input, .quote textarea{
+
+    #newsletter form input[type="email"], .quote input, .quote textarea {
         width: 100%;
         margin-bottom: 5px;
     }
-    .news-container h1{
+
+    .news-container h1 {
         display: block;
         text-align: center;
         justify-content: center;
